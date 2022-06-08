@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Result</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-02-09 19:06:30</p>
+                <p class='attribute'><strong>Duration: </strong>298.858s</p>
+                <p class='attribute'><strong>Status: </strong>Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>smoke-report</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr class='success'>
+                                <td class="col-xs-9">test_search_salt_shaker (searchtest.SearchTest)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-success">
+                                        
+                                            Pass
+                                        
+                                    </span>
+                                    
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class='warning'>
+                                <td class="col-xs-9">test_search (searchtest.SearchTest)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-warning">
+                                        
+                                            Error
+                                        
+                                    </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
+                                </td>
+                            </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>NoSuchElementException</p>
+                                        <p>Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="search_query"]"}
+  (Session info: chrome=98.0.4758.81)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0088FDC3+2555331]
+	Ordinal0 [0x008277F1+2127857]
+	Ordinal0 [0x00722E08+1060360]
+	Ordinal0 [0x0074E49E+1238174]
+	Ordinal0 [0x0074E69B+1238683]
+	Ordinal0 [0x00779252+1413714]
+	Ordinal0 [0x00767B54+1342292]
+	Ordinal0 [0x007775FA+1406458]
+	Ordinal0 [0x00767976+1341814]
+	Ordinal0 [0x007436B6+1193654]
+	Ordinal0 [0x00744546+1197382]
+	GetHandleVerifier [0x00A29622+1619522]
+	GetHandleVerifier [0x00AD882C+2336844]
+	GetHandleVerifier [0x009223E1+541697]
+	GetHandleVerifier [0x00921443+537699]
+	Ordinal0 [0x0082D18E+2150798]
+	Ordinal0 [0x00831518+2168088]
+	Ordinal0 [0x00831660+2168416]
+	Ordinal0 [0x0083B330+2208560]
+	BaseThreadInitThunk [0x7786FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77AB7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77AB7A6E+238]
+</p>
+                                    </td>
+                                </tr>
+                            
+                        
+                        <tr>
+                            <td>
+                               Total Test Runned: 2
+                            </td>
+                            <td>
+                                <span>Pass: 1, Error: 1</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>
