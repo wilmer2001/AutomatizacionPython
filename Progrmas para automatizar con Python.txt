@@ -1,0 +1,3 @@
+Instalar python version superior a la 3.6
+Selenium en la terminal ejecutar - > pip3 install selenium
+PyunitReport en la terminal Ejecutar -> pip3 install pyunitreport
