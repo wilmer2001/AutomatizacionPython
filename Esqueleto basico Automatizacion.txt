@@ -1,0 +1,14 @@
+class RegisterNewUser(unittest.TestCase):
+    def setUp(self):
+        self.driver = webdriver.Chrome(executable_path= '../chromedriver')
+        driver = self.driver
+        driver.implicitly_wait(30)
+        driver.maximize_window()
+        driver.get('Url de la pagina')
+
+
+
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity= 2)
