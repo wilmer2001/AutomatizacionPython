@@ -1,12 +1,21 @@
-class RegisterNewUser(unittest.TestCase):
+import unittest
+from selenium import webdriver
+
+
+class *(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path= '../chromedriver')
+        self.driver = webdriver.Chrome(executable_path= './chromedriver_win32/chromedriver.exe')
         driver = self.driver
         driver.implicitly_wait(30)
         driver.maximize_window()
         driver.get('Url de la pagina')
 
+    def *(self):
+        pass
 
+
+    def tearDown(self):
+        self.driver.close()
 
 
 
