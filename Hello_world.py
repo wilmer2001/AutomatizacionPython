@@ -13,10 +13,10 @@ class HelloWorld(unittest.TestCase):
 
     def test_hello_world(self):
         driver = self.driver
-        driver.get('https://www.platzi.com')
+       # driver.get('https://www.platzi.com')
 
     def test_visit_wikipedia(self):
-        self.driver.get('https://wikipedia.org')
+        #self.driver.get('https://wikipedia.org')
 
     @classmethod
     def tearDownClass(cls):
